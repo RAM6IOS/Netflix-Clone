@@ -7,10 +7,21 @@
 
 import SwiftUI
 
+
+
+
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack{
+           Cared()
+            Home()
+            
+        Text("Hello, world!rcdcf")
             .padding()
+            
+         
+        }
     }
 }
 
