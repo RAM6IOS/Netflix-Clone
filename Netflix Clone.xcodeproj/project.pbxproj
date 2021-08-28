@@ -11,6 +11,10 @@
 		04171BB126D6DFC5005FFE1C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 04171BB026D6DFC5005FFE1C /* Kingfisher */; };
 		041C316A26D7AFDF00D054D1 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C316926D7AFDF00D054D1 /* HomeVM.swift */; };
 		041C316B26D7AFDF00D054D1 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C316926D7AFDF00D054D1 /* HomeVM.swift */; };
+		041EB22026DA55AD0001CCA8 /* TopMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB21F26DA55AD0001CCA8 /* TopMovie.swift */; };
+		041EB22126DA55AD0001CCA8 /* TopMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB21F26DA55AD0001CCA8 /* TopMovie.swift */; };
+		041EB22326DADE230001CCA8 /* SmalVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB22226DADE230001CCA8 /* SmalVerticalButton.swift */; };
+		041EB22426DADE230001CCA8 /* SmalVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB22226DADE230001CCA8 /* SmalVerticalButton.swift */; };
 		045B4E7126D2E9CA0021F2EF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B4E7026D2E9CA0021F2EF /* Tests_iOS.swift */; };
 		045B4E7B26D2E9CA0021F2EF /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B4E7A26D2E9CA0021F2EF /* Tests_macOS.swift */; };
 		045B4E7C26D2E9CA0021F2EF /* Netflix_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B4E5A26D2E9BF0021F2EF /* Netflix_CloneApp.swift */; };
@@ -50,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		041C316926D7AFDF00D054D1 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		041EB21F26DA55AD0001CCA8 /* TopMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMovie.swift; sourceTree = "<group>"; };
+		041EB22226DADE230001CCA8 /* SmalVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmalVerticalButton.swift; sourceTree = "<group>"; };
 		045B4E5A26D2E9BF0021F2EF /* Netflix_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CloneApp.swift; sourceTree = "<group>"; };
 		045B4E5B26D2E9BF0021F2EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		045B4E5C26D2E9C90021F2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 				04C352DB26D3C486009CD892 /* StandardHomemovie.swift */,
 				04C352DE26D3C5B6009CD892 /* Global Helpers.swift */,
 				041C316926D7AFDF00D054D1 /* HomeVM.swift */,
+				041EB21F26DA55AD0001CCA8 /* TopMovie.swift */,
+				041EB22226DADE230001CCA8 /* SmalVerticalButton.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -327,8 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041EB22326DADE230001CCA8 /* SmalVerticalButton.swift in Sources */,
 				04C352D326D3BEF6009CD892 /* Cared.swift in Sources */,
 				045B4E7E26D2E9CA0021F2EF /* ContentView.swift in Sources */,
+				041EB22026DA55AD0001CCA8 /* TopMovie.swift in Sources */,
 				04C352DF26D3C5B6009CD892 /* Global Helpers.swift in Sources */,
 				041C316A26D7AFDF00D054D1 /* HomeVM.swift in Sources */,
 				04C352D626D3BF62009CD892 /* Home.swift in Sources */,
@@ -342,8 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041EB22426DADE230001CCA8 /* SmalVerticalButton.swift in Sources */,
 				04C352D426D3BEF6009CD892 /* Cared.swift in Sources */,
 				045B4E7F26D2E9CA0021F2EF /* ContentView.swift in Sources */,
+				041EB22126DA55AD0001CCA8 /* TopMovie.swift in Sources */,
 				04C352E026D3C5B6009CD892 /* Global Helpers.swift in Sources */,
 				041C316B26D7AFDF00D054D1 /* HomeVM.swift in Sources */,
 				04C352D726D3BF62009CD892 /* Home.swift in Sources */,

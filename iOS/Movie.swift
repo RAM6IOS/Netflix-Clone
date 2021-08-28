@@ -12,4 +12,5 @@ struct Movie :Identifiable{
     var id : String
     var name : String
     var thumbeailURl : URL
+    var categories:[String]
 }
