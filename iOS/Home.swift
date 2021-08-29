@@ -14,11 +14,12 @@ struct Home: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
            
-            ScrollView{
+            ScrollView( showsIndicators: false){
                 LazyVStack {
+                    TopMovie(movie: exampleMovie1)
+                        .padding(.top,-110)
+                    
                     ForEach(vm.allCategores, id:\.self) { Category in
-                        
-                        
                         VStack{
                         HStack{
                             Text(Category)
@@ -31,9 +32,10 @@ struct Home: View {
                                 LazyHStack{
                                     ForEach(vm.getMovie(forCat: Category)){
                                        movie in
-                                        StandardHomemovie(movie: movie)
-                                            .frame(width: 150, height:200)
-                                            .padding(.horizontal,10)
+                                       StandardHomemovie(movie: movie)
+                                            .frame(width: 140, height: 200)
+                                            .padding(.horizontal,5)
+                                            
                                     }
                                 }
                             }
@@ -42,11 +44,20 @@ struct Home: View {
                     }
                     .foregroundColor(.white)
                 }
-            }
-            
+ 
+                        
+                        
+                                  }
+ 
+                           
         }
+
+        
+            }
     }
-}
+    
+
+
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {

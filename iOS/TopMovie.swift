@@ -46,15 +46,29 @@ struct TopMovie: View {
                     }
                 }
                 HStack{
-                    Text("My List")
-                    Text("Play Button")
-                    Text("Info Button")
+                    Spacer()
+                    SmalVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isON: true){
+                        
+                    }
+                    Spacer()
+                    WhitButton(text:"Play" , imageName: "play.fill"){
+                        
+                    }
+                    .frame(width: 120)
+                    Spacer()
+                    SmalVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isON: true){
+                        
+                    }
+                    Spacer()
                 }
                 
-                Text("Row of buttons")
+                
             }
+            .background(LinearGradient.balckOpacityGradient)
+            
         
         }
+        .foregroundColor(.white)
     }
 }
 

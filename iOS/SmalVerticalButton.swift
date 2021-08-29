@@ -31,7 +31,7 @@ struct SmalVerticalButton: View {
                     .foregroundColor(.white)
                 Text(text)
                     .foregroundColor(.white)
-                    .font(.system(size: 14))
+                    .font(.system(size: 20))
                     .bold()
                 }
             }
