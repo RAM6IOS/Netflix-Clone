@@ -16,28 +16,60 @@ struct MoiveDetail: View {
         ZStack{
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            VStack{
-                HStack{
-                    Spacer()
-                    Button (action: {
-                        
-                    }, label: {
-                        Image(systemName: "xmark.circle")
-                            .font(.system(size: 20))
-                    })
-                }
-                .padding(.horizontal,22)
+           
+                
                 ScrollView(.vertical,showsIndicators: false){
-                    VStack{
+                  
+                    LazyVStack {
+                   
+         
+                        
+                        HStack{
+                          
+                            Spacer()
+                            Button(action:{
+                                
+                            },label:{
+                                Image(systemName: "xmark.circle")
+                                    .background(Color.white)
+                                    .font(.system(size: 28))
+                                    .foregroundColor(.black)
+                                    .cornerRadius(.infinity)
+                                    
+                                   
+                                    
+                            })
+                                
+                            
+                        }
+                        .padding(.horizontal)
+                        
+                        
+                        
+                       
+                        
+                   
                         StandardHomemovie(movie: movie)
                             .frame(width: .infinity )
+                            .padding(.top,-70)
+                            .zIndex(-1)
+                    }
+                    MovieInfoSubhadline(movie: movie)
+                    if movie.promostionHeadline != nil {
+                        Text(movie.promostionHeadline!)
+                            .bold()
+                            .font(.headline)
+                            .foregroundColor(.white)
+                    }
+                    }
                         
-                        MovieInfoSubhadline()
+                       
                     }
                     
-                }
-            }
-        }
+                
+            
+            
+        
         
             
     }
@@ -51,15 +83,36 @@ struct MoiveDetail_Previews: PreviewProvider {
 
 struct MovieInfoSubhadline
 : View {
+    var movie: Movie
     var body: some View {
-        HStack{
+        HStack( spacing: 20){
             Image(systemName: "hand.thumbsup.fill")
                 .foregroundColor(.white)
-            Text("MOvie YEAR")
-            Text("Rating")
-            Text("seaons")
+            Text(String(movie.yer))
+            RatingView(rating: movie.rating)
+            
+            Text(movie.numberOfeasonsDisplay)
+            
         }
         .foregroundColor(.gray)
         .padding(.vertical, 6)
+    }
+}
+
+struct RatingView: View {
+    var rating: String
+    var body: some View {
+        
+            
+        ZStack{
+            Rectangle()
+                .foregroundColor(.gray)
+            Text(rating)
+                .foregroundColor(.white)
+                .font(.system(size:12))
+                .bold()
+        }.frame(width: 60, height: 20 )
+        
+        
     }
 }

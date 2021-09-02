@@ -27,6 +27,8 @@
 		045B4E8126D2E9CA0021F2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045B4E5C26D2E9C90021F2EF /* Assets.xcassets */; };
 		0478042F26DE5BC1006D9093 /* MoiveDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478042E26DE5BC1006D9093 /* MoiveDetail.swift */; };
 		0478043026DE5BC1006D9093 /* MoiveDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478042E26DE5BC1006D9093 /* MoiveDetail.swift */; };
+		049850FB26E12F3000492425 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049850FA26E12F3000492425 /* Episode.swift */; };
+		049850FC26E12F3000492425 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049850FA26E12F3000492425 /* Episode.swift */; };
 		04C352D326D3BEF6009CD892 /* Cared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C352D226D3BEF6009CD892 /* Cared.swift */; };
 		04C352D426D3BEF6009CD892 /* Cared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C352D226D3BEF6009CD892 /* Cared.swift */; };
 		04C352D626D3BF62009CD892 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C352D526D3BF62009CD892 /* Home.swift */; };
@@ -71,6 +73,7 @@
 		045B4E7626D2E9CA0021F2EF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B4E7A26D2E9CA0021F2EF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		0478042E26DE5BC1006D9093 /* MoiveDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoiveDetail.swift; sourceTree = "<group>"; };
+		049850FA26E12F3000492425 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		04C352D226D3BEF6009CD892 /* Cared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cared.swift; sourceTree = "<group>"; };
 		04C352D526D3BF62009CD892 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		04C352D826D3C39E009CD892 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -173,6 +176,7 @@
 				041EB22226DADE230001CCA8 /* SmalVerticalButton.swift */,
 				0432655D26DBAC85001AB223 /* WhitButton.swift */,
 				0478042E26DE5BC1006D9093 /* MoiveDetail.swift */,
+				049850FA26E12F3000492425 /* Episode.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -350,6 +354,7 @@
 				041EB22026DA55AD0001CCA8 /* TopMovie.swift in Sources */,
 				04C352DF26D3C5B6009CD892 /* Global Helpers.swift in Sources */,
 				041C316A26D7AFDF00D054D1 /* HomeVM.swift in Sources */,
+				049850FB26E12F3000492425 /* Episode.swift in Sources */,
 				04C352D626D3BF62009CD892 /* Home.swift in Sources */,
 				045B4E7C26D2E9CA0021F2EF /* Netflix_CloneApp.swift in Sources */,
 				04C352DC26D3C486009CD892 /* StandardHomemovie.swift in Sources */,
@@ -369,6 +374,7 @@
 				041EB22126DA55AD0001CCA8 /* TopMovie.swift in Sources */,
 				04C352E026D3C5B6009CD892 /* Global Helpers.swift in Sources */,
 				041C316B26D7AFDF00D054D1 /* HomeVM.swift in Sources */,
+				049850FC26E12F3000492425 /* Episode.swift in Sources */,
 				04C352D726D3BF62009CD892 /* Home.swift in Sources */,
 				045B4E7D26D2E9CA0021F2EF /* Netflix_CloneApp.swift in Sources */,
 				04C352DD26D3C486009CD892 /* StandardHomemovie.swift in Sources */,
