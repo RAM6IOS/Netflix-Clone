@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct WhitButton: View {
+struct PlayButton: View {
     var text:String
     var imageName:String
+    var backGroundColor: Color = Color.white
+    
     var action:() -> Void
     var body: some View {
         Button(action:action , label:{
@@ -23,20 +25,20 @@ struct WhitButton: View {
                 Spacer()
             }
             .padding(.vertical)
-            .foregroundColor(.black)
-            .background(Color.white)
+            .foregroundColor(backGroundColor == .white ? .black: .white)
+            .background(backGroundColor)
             .cornerRadius(3.0)
         }
         )
     }
 }
 
-struct WhitButton_Previews: PreviewProvider {
+struct PlayButton_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            WhitButton(text:"Play" , imageName: "play.fill"){
+            PlayButton(text:"Play" , imageName: "play.fill",backGroundColor: .white){
                 print("Tapped")
             }
         }
