@@ -12,6 +12,10 @@ import Kingfisher
 
 struct MoiveDetail: View {
     var movie: Movie
+    @State private var showSeasonPicKer = false
+    @State private var selectedSeason = 1
+    @Binding var movieDeiToShow:Movie?
+    
     var body: some View {
         ZStack{
             Color.black
@@ -28,7 +32,7 @@ struct MoiveDetail: View {
                           
                             Spacer()
                             Button(action:{
-                                
+                                movieDeiToShow = nil
                             },label:{
                                 Image(systemName: "xmark.circle")
                                     .background(Color.white)
@@ -80,18 +84,49 @@ struct MoiveDetail: View {
                         Spacer()
                     }
                     .padding(.leading,20)
+                    CutomTabSwitcher(moves: movie, tabs: [.episodes,.trailers,.more], showSeasonPicker: $showSeasonPicKer, selectedSeason: $selectedSeason)
                     
-                    CutomTabSwitcher()
+                    
                     
                     
                     
                 }
                 .padding(.horizontal , 10)
             
+            if showSeasonPicKer {
+                Color.black.opacity(0.9)
+                    .edgesIgnoringSafeArea(.all)
+                VStack(spacing: 40){
+                    Spacer()
+                    ForEach(0..<(movie.numberOfSeasons ?? 0)){ season in
+                        Button(action: {
+                            self.selectedSeason = season + 1
+                            self.showSeasonPicKer = true
+                            
+                        }, label: {
+                            Text("Season \(season + 1)")
+                                .foregroundColor(selectedSeason == season + 1 ? .white : .gray)
+                                .bold()
+                                .font(selectedSeason == season + 1 ? .title : .title2)
+                        })
                         
+                    }
+                    Spacer()
+                    Button(action: {
+                        self.showSeasonPicKer = false
+                    }, label: {
+                        Image(systemName: "x.circle.fill")
+                            .foregroundColor(.white)
+                            .font(.system(size: 40))
+                    })
+                        .padding(.bottom,30)
+                }
+                
+            }
                        
                     }
         .foregroundColor(.white)
+        
                     
                 
             
@@ -104,7 +139,7 @@ struct MoiveDetail: View {
 
 struct MoiveDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MoiveDetail(movie: exampleMovie1)
+        MoiveDetail(movie: exampleMovie1, movieDeiToShow: .constant(nil))
     }
 }
 

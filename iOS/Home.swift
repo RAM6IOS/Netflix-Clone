@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Home: View {
     var vm = HomeVM()
+    @State private var movieDeiToShow:Movie? = nil
     var body: some View {
         ZStack{
             Color.black
@@ -40,6 +41,9 @@ struct Home: View {
                                        StandardHomemovie(movie: movie)
                                             .frame(width: 140, height: 200)
                                             .padding(.horizontal,5)
+                                            .onTapGesture(perform:  {
+                                                movieDeiToShow = movie
+                                            })
                                             
                                     }
                                 }
@@ -54,9 +58,12 @@ struct Home: View {
                         
                                   }
  
-                           
-        }
-
+            if movieDeiToShow != nil {
+                MoiveDetail(movie: movieDeiToShow!, movieDeiToShow: $movieDeiToShow)
+                    .animation(.easeInOut)
+                    .transition(.identity)
+            }
+                 }
         
             }
     }

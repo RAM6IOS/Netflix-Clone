@@ -25,8 +25,11 @@ struct Movie :Identifiable{
     
     var currentEpisode:CurrentEoisodInfo?
     var defaulEpisodeInfo:CurrentEoisodInfo
+    var moreLiKeThisMvies: [Movie]
     
     var episode:[Episode]?
+    
+    var trailers: [Trailer]
     var numberOfeasonsDisplay:String {
         if let num = numberOfSeasons {
             if num == 1 {
@@ -58,6 +61,7 @@ struct Movie :Identifiable{
     }
     
 }
+
 struct CurrentEoisodInfo:Hashable,Equatable {
     var episodName: String
     var descriotion: String
